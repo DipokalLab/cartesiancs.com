@@ -103,6 +103,7 @@ function Coordinate() {
           animationFillMode: "forwards",
         })}
         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        alt="header"
       ></img>
     </div>
   );
