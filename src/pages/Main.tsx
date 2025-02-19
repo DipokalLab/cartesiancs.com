@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { css, keyframes } from "@emotion/react";
 import "../App.css";
 import { Button } from "../components/Button";
+import TopNavBar from "../components/TopNavbar";
 
 const fade = keyframes`
   0% {
@@ -112,6 +113,7 @@ function Header() {
         flexDirection: "column",
       })}
     >
+      <TopNavBar />
       <h1
         css={css({
           fontSize: "2rem",
