@@ -47,6 +47,7 @@ const navItemStyle = css({
   color: "#bfbfc7",
   "@media (max-width: 600px)": {
     fontSize: "0.8rem",
+    margin: "0 0rem",
   },
   ":hover svg": {
     opacity: 1,
@@ -55,7 +56,7 @@ const navItemStyle = css({
 });
 
 const arrowIconStyle = css({
-  marginLeft: "0.5rem",
+  marginLeft: "0.25rem",
   opacity: 0,
   transform: "translateX(-5px)",
   transition: "opacity 0.3s ease, transform 0.3s ease",

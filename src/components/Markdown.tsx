@@ -18,7 +18,7 @@ export function MarkdownContent({ content }: { content?: string }) {
         css={css({
           display: "flex",
           padding: "1rem",
-          maxWidth: "530px",
+          maxWidth: "600px",
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
