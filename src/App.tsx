@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import { Home } from "lucide-react";
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./App.css";
 import Main from "./pages/Main";
