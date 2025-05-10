@@ -4,7 +4,6 @@ import { css } from "@emotion/react";
 import "../App.css";
 import TopNavBar from "../components/TopNavbar";
 import { MarkdownContent } from "../components/Markdown";
-import Footer from "../components/Footer";
 
 export function About() {
   const [content, setContent] = useState("");
