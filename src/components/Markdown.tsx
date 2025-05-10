@@ -2,6 +2,7 @@
 
 import { css } from "@emotion/react";
 import Markdown from "marked-react";
+import Footer from "./Footer";
 
 export function MarkdownContent({ content }: { content?: string }) {
   return (
@@ -35,6 +36,7 @@ export function MarkdownContent({ content }: { content?: string }) {
           })}
         >
           <Markdown>{content}</Markdown>
+          <Footer />
         </div>
       </div>
     </div>
