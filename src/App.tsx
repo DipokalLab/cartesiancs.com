@@ -4,6 +4,7 @@ import "./App.css";
 import Main from "./pages/Main";
 import { About } from "./pages/About";
 import { Product } from "./pages/Product";
+import { Sheet } from "./pages/Sheet";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/sheet" element={<Sheet />} />
         </Routes>
       </BrowserRouter>
     </>
