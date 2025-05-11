@@ -53,6 +53,7 @@ export function Sheet() {
             width: "100%",
             padding: "100px 1rem 1rem 1rem",
             boxSizing: "border-box",
+            maxWidth: "1200px",
           })}
         >
           <div
@@ -62,7 +63,7 @@ export function Sheet() {
               justifyContent: "center",
               alignItems: "stretch",
               width: "100%",
-              maxWidth: "100%",
+              maxWidth: "1200px",
               flexWrap: "wrap",
             })}
           >
@@ -78,7 +79,7 @@ export function Sheet() {
               justifyContent: "center",
               alignItems: "stretch",
               width: "100%",
-              maxWidth: "100%",
+              maxWidth: "1200px",
               flexWrap: "wrap",
               marginTop: "1.5rem",
             })}
@@ -188,7 +189,7 @@ export function Sheet() {
               justifyContent: "center",
               alignItems: "stretch",
               width: "100%",
-              maxWidth: "100%",
+              maxWidth: "1200px",
               flexWrap: "wrap",
               marginTop: "1rem",
               marginBottom: "2rem",
