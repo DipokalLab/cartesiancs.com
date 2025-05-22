@@ -30,6 +30,8 @@ const shareholderData = [
   { name: "Hyeong Jun Huh", tokens: 5000, percentage: "100%" },
 ];
 
+const maxWidth = "800px";
+
 export function Sheet() {
   return (
     <>
@@ -53,7 +55,7 @@ export function Sheet() {
             width: "100%",
             padding: "100px 1rem 1rem 1rem",
             boxSizing: "border-box",
-            maxWidth: "1200px",
+            maxWidth: maxWidth,
           })}
         >
           <div
@@ -63,7 +65,7 @@ export function Sheet() {
               justifyContent: "center",
               alignItems: "stretch",
               width: "100%",
-              maxWidth: "1200px",
+              maxWidth: maxWidth,
               flexWrap: "wrap",
             })}
           >
@@ -79,7 +81,7 @@ export function Sheet() {
               justifyContent: "center",
               alignItems: "stretch",
               width: "100%",
-              maxWidth: "1200px",
+              maxWidth: maxWidth,
               flexWrap: "wrap",
               marginTop: "1.5rem",
             })}
@@ -189,7 +191,7 @@ export function Sheet() {
               justifyContent: "center",
               alignItems: "stretch",
               width: "100%",
-              maxWidth: "1200px",
+              maxWidth: maxWidth,
               flexWrap: "wrap",
               marginTop: "1rem",
               marginBottom: "2rem",
