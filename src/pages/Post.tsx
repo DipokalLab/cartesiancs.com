@@ -4,7 +4,6 @@ import { css } from "@emotion/react";
 import { useParams } from "react-router-dom";
 import { MarkdownContent } from "../components/Markdown";
 import TopNavBar from "../components/TopNavbar";
-import Footer from "../components/Footer";
 
 export default function Post() {
   const { slug } = useParams();
