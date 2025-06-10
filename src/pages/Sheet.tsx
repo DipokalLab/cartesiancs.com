@@ -32,7 +32,10 @@ const shareholderData = [
 
 const maxWidth = "800px";
 
-const postsData = [{ title: "Why We Founded a DAO", slug: "introducing" }];
+const postsData = [
+  { title: "Why We Founded a DAO", slug: "introducing" },
+  { title: "Open Source", slug: "open-source" },
+];
 
 export function Sheet() {
   return (
