@@ -7,3 +7,4 @@ Project Fleet is our experimental launchpad for pilot projects. We continuously 
 [cartesiancs/map3d](https://github.com/cartesiancs/map3d)  
 [DipokalLab/saber](https://github.com/DipokalLab/saber)  
 [DipokalLab/intellect](https://github.com/DipokalLab/intellect)
+[DipokalLab/glass](https://github.com/DipokalLab/glass)
