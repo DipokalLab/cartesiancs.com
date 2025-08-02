@@ -1,3 +1,3 @@
-# 프로덕트
+# Product
 
-[cartesiancs](https://github.com/cartesiancs) 깃허브 참고해보세요. 대부분의 프로젝트를 오픈소스로 진행하고 있습니다. 대부분 MIT 라이선스를 지향하며 상용 프로덕트를 오픈소스로 이기는게 가능하다고 믿습니다.
+Check out [cartesiancs](https://github.com/cartesiancs) on GitHub. Most of our projects are open source. We primarily aim for the MIT license and believe it’s possible to surpass commercial products with open source.
