@@ -28,6 +28,7 @@ export function About() {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
+          paddingTop: "4rem",
         })}
       >
         <TopNavBar />
