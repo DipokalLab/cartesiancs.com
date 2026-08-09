@@ -4,6 +4,7 @@ import { css } from "@emotion/react";
 import { useParams } from "react-router-dom";
 import { MarkdownContent } from "../components/Markdown";
 import TopNavBar from "../components/TopNavbar";
+import Footer from "../components/Footer";
 
 export default function Post() {
   const { slug } = useParams();
@@ -40,9 +41,9 @@ export default function Post() {
     <div
       css={css({
         display: "flex",
-        height: "100%",
+        minHeight: "100%",
         width: "100%",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
         flexDirection: "column",
       })}
@@ -69,6 +70,8 @@ export default function Post() {
       ) : (
         <MarkdownContent content={postContent || ""} />
       )}
+
+      <Footer />
     </div>
   );
 }

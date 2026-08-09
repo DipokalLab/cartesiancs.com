@@ -25,7 +25,8 @@ const navBarStyle = css({
     height: "100%",
     backgroundColor: "rgba(13, 14, 15, 0.72)",
     backdropFilter: "blur(12px)",
-    // 그라데이션을 반대로 적용: 상단이 검은색(마스크가 완전 적용되어 블러 효과가 보임), 하단은 투명
+    // Inverted gradient: opaque at the top (mask fully applied, blur visible),
+    // fading to transparent at the bottom.
     WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
     maskImage: "linear-gradient(to bottom, black, transparent)",
     zIndex: -1,
@@ -76,7 +77,6 @@ const arrowIconStyle = css({
 const navItems = [
   { name: "/", link: "/" },
   { name: "Product", link: "/product" },
-  { name: "Sheet", link: "/sheet" },
   { name: "GitHub", link: "https://github.com/cartesiancs" },
   { name: "LinkedIn", link: "https://www.linkedin.com/company/cartesiancs" },
 ];
@@ -88,8 +88,8 @@ const TopNavBar = () => {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
-    // App.css 에서 body 에 height:100% + overflow-x:hidden 이 걸려 있어
-    // 실제 스크롤 컨테이너가 window 가 아니라 body 인 경우가 있다.
+    // App.css sets height:100% + overflow-x:hidden on body, which can make
+    // <body> the scroll container instead of the window.
     const getScrollTop = () =>
       window.scrollY ||
       document.documentElement.scrollTop ||
@@ -106,7 +106,7 @@ const TopNavBar = () => {
 
       if (Math.abs(delta) < SCROLL_THRESHOLD) return;
 
-      // 최상단 근처에서는 항상 보이도록 유지
+      // Always keep it visible at the very top of the page
       setVisible(currentY <= 0 || delta < 0);
       lastScrollY.current = currentY;
     };
@@ -117,8 +117,8 @@ const TopNavBar = () => {
       window.requestAnimationFrame(update);
     };
 
-    // scroll 이벤트는 버블링되지 않으므로 캡처 단계로 받아
-    // window / documentElement / body 어디가 스크롤되든 감지한다.
+    // Scroll events do not bubble, so listen in the capture phase to catch
+    // scrolling on window / documentElement / body alike.
     const options = { capture: true, passive: true } as const;
     window.addEventListener("scroll", onScroll, options);
     return () => window.removeEventListener("scroll", onScroll, options);

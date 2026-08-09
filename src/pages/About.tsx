@@ -4,6 +4,7 @@ import { css } from "@emotion/react";
 import "../App.css";
 import TopNavBar from "../components/TopNavbar";
 import { MarkdownContent } from "../components/Markdown";
+import Footer from "../components/Footer";
 
 export function About() {
   const [content, setContent] = useState("");
@@ -23,17 +24,20 @@ export function About() {
       <div
         css={css({
           display: "flex",
-          height: "100%",
+          minHeight: "100%",
           width: "100%",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           alignItems: "center",
           flexDirection: "column",
           paddingTop: "4rem",
+          boxSizing: "border-box",
         })}
       >
         <TopNavBar />
 
         <MarkdownContent content={content} />
+
+        <Footer />
       </div>
     </>
   );

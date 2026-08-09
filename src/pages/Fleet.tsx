@@ -4,6 +4,7 @@ import { css } from "@emotion/react";
 import "../App.css";
 import TopNavBar from "../components/TopNavbar";
 import { MarkdownContent } from "../components/Markdown";
+import Footer from "../components/Footer";
 
 export function Fleet() {
   const [content, setContent] = useState("");
@@ -23,9 +24,9 @@ export function Fleet() {
       <div
         css={css({
           display: "flex",
-          height: "100%",
+          minHeight: "100%",
           width: "100%",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           alignItems: "center",
           flexDirection: "column",
         })}
@@ -33,6 +34,8 @@ export function Fleet() {
         <TopNavBar />
 
         <MarkdownContent content={content} />
+
+        <Footer />
       </div>
     </>
   );
