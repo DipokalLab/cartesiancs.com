@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { css } from "@emotion/react";
 import { ArrowRight } from "lucide-react";
 
@@ -15,6 +15,7 @@ const navBarStyle = css({
   color: "white",
   padding: "1rem",
   overflow: "hidden",
+  transition: "opacity 0.4s ease, transform 0.4s ease, visibility 0.4s",
   "&::before": {
     content: '""',
     position: "absolute",
@@ -29,6 +30,13 @@ const navBarStyle = css({
     maskImage: "linear-gradient(to bottom, black, transparent)",
     zIndex: -1,
   },
+});
+
+const navBarHiddenStyle = css({
+  opacity: 0,
+  transform: "translateY(-100%)",
+  visibility: "hidden",
+  pointerEvents: "none",
 });
 
 const navListStyle = css({
@@ -73,9 +81,51 @@ const navItems = [
   { name: "LinkedIn", link: "https://www.linkedin.com/company/cartesiancs" },
 ];
 
+const SCROLL_THRESHOLD = 8;
+
 const TopNavBar = () => {
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    // App.css 에서 body 에 height:100% + overflow-x:hidden 이 걸려 있어
+    // 실제 스크롤 컨테이너가 window 가 아니라 body 인 경우가 있다.
+    const getScrollTop = () =>
+      window.scrollY ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
+
+    lastScrollY.current = getScrollTop();
+    let ticking = false;
+
+    const update = () => {
+      ticking = false;
+      const currentY = getScrollTop();
+      const delta = currentY - lastScrollY.current;
+
+      if (Math.abs(delta) < SCROLL_THRESHOLD) return;
+
+      // 최상단 근처에서는 항상 보이도록 유지
+      setVisible(currentY <= 0 || delta < 0);
+      lastScrollY.current = currentY;
+    };
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    };
+
+    // scroll 이벤트는 버블링되지 않으므로 캡처 단계로 받아
+    // window / documentElement / body 어디가 스크롤되든 감지한다.
+    const options = { capture: true, passive: true } as const;
+    window.addEventListener("scroll", onScroll, options);
+    return () => window.removeEventListener("scroll", onScroll, options);
+  }, []);
+
   return (
-    <div css={navBarStyle}>
+    <div css={[navBarStyle, !visible && navBarHiddenStyle]}>
       <div css={navListStyle}>
         {navItems.map((item, index) => (
           <div
