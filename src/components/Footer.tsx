@@ -3,9 +3,11 @@ import { css } from "@emotion/react";
 
 const footerStyle = css({
   width: "100%",
+  borderTop: "1px solid rgb(36, 36, 43)",
+
   backgroundColor: "#0d0e0f",
   color: "#e6e6eb",
-  marginTop: "4rem",
+  marginTop: "0rem",
 });
 
 const innerStyle = css({
@@ -126,6 +128,9 @@ function Footer() {
             </a>
             <a css={linkStyle} href="/fleet">
               Fleet
+            </a>
+            <a css={linkStyle} href="/career">
+              Career
             </a>
           </div>
 

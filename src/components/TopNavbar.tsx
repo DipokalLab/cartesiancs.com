@@ -75,8 +75,9 @@ const arrowIconStyle = css({
 });
 
 const navItems = [
-  { name: "/", link: "/" },
+  { name: "Home", link: "/" },
   { name: "Product", link: "/product" },
+  { name: "Career", link: "/career" },
   { name: "GitHub", link: "https://github.com/cartesiancs" },
   { name: "LinkedIn", link: "https://www.linkedin.com/company/cartesiancs" },
 ];

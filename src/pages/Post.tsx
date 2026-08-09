@@ -46,6 +46,8 @@ export default function Post() {
         justifyContent: "flex-start",
         alignItems: "center",
         flexDirection: "column",
+        paddingBottom: "6rem",
+        boxSizing: "border-box",
       })}
     >
       <TopNavBar />
