@@ -197,7 +197,7 @@ const quoteNameStyle = css({
 });
 
 const faqListStyle = css({
-  marginTop: "4rem",
+  marginTop: "6rem",
   borderTop: "1px solid rgb(36, 36, 43)",
 });
 
@@ -422,7 +422,7 @@ export function CartCut() {
         <blockquote css={quoteStyle}>
           I made this because I was pissed off that the free editing program
           started charging for its services.
-          <span css={quoteNameStyle}>Huh Hyeong Jun</span>
+          <span css={quoteNameStyle}>H. Jun Huh</span>
         </blockquote>
 
         <div css={faqListStyle}>
