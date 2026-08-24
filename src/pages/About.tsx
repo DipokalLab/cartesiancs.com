@@ -30,7 +30,7 @@ export function About() {
           alignItems: "center",
           flexDirection: "column",
           paddingTop: "2rem",
-          paddingBottom: "6rem",
+          paddingBottom: "0rem",
           boxSizing: "border-box",
         })}
       >

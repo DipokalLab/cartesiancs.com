@@ -17,7 +17,7 @@ const pageStyle = css({
 const contentStyle = css({
   width: "100%",
   maxWidth: "720px",
-  padding: "9rem 2rem 8rem 2rem",
+  padding: "6rem 2rem 8rem 2rem",
   boxSizing: "border-box",
   "@media (max-width: 640px)": {
     padding: "7rem 1.5rem 6rem 1.5rem",
@@ -137,7 +137,9 @@ export function CareerProductEngineer() {
 
         <h2 css={sectionTitleStyle}>Responsibilities</h2>
         <ul css={listStyle}>
-          <li>Ship features across the web client, backend, and device firmware.</li>
+          <li>
+            Ship features across the web client, backend, and device firmware.
+          </li>
           <li>Own an area end to end, including its reliability.</li>
           <li>Work in public repositories under MIT.</li>
           <li>Build interfaces for maps, telemetry, and network topology.</li>

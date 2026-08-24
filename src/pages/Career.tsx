@@ -17,7 +17,7 @@ const pageStyle = css({
 const contentStyle = css({
   width: "100%",
   maxWidth: "720px",
-  padding: "9rem 2rem 8rem 2rem",
+  padding: "8rem 2rem 20rem 2rem",
   boxSizing: "border-box",
   "@media (max-width: 640px)": {
     padding: "7rem 1.5rem 6rem 1.5rem",
@@ -108,7 +108,6 @@ export function Career() {
         <h1 css={titleStyle}>Careers</h1>
         <p css={introStyle}>We hire on a rolling basis.</p>
 
-        <h2 css={listTitleStyle}>Open positions</h2>
         <ul css={listStyle}>
           <li>
             <Link css={rowStyle} to="/career/product-engineer">
