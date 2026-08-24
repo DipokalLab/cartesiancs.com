@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import TopNavBar from "../components/TopNavbar";
 import Footer from "../components/Footer";
@@ -123,15 +124,10 @@ export function Product() {
         <div css={overlayStyle} />
         <div css={captionStyle}>
           <h2 css={titleStyle}>CartCut</h2>
-          <a
-            css={linkStyle}
-            href="https://github.com/cartesiancs/cartcut"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link css={linkStyle} to="/cartcut">
             Visit
             <ArrowRight css={linkIconStyle} />
-          </a>
+          </Link>
         </div>
       </section>
 
