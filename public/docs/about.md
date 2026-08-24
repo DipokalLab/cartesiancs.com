@@ -4,7 +4,7 @@ cartesiancs ( pronounced `/kɑːrˈtiːʒəns/`)
 
 We embrace open source culture and work to reduce reliance on centralized authority as much as possible.
 
-One of the projects we worked on is [cartesiancs/nugget-app](https://github.com/cartesiancs/nugget-app), and our current ongoing project is [cartesiancs/vessel](https://github.com/cartesiancs/vessel), [cartesiancs/map3d](https://github.com/cartesiancs/map3d). [and more.](https://github.com/cartesiancs)
+One of the projects we worked on is [cartesiancs/cartcut](https://github.com/cartesiancs/cartcut), and our current ongoing project is [cartesiancs/vessel](https://github.com/cartesiancs/vessel), [cartesiancs/map3d](https://github.com/cartesiancs/map3d). [and more.](https://github.com/cartesiancs)
 
 Our ultimate goal is to empower individuals to live **independently** to give each person the strength to change the world and the freedom to pursue their own dreams. That is our mission.
 
@@ -24,7 +24,7 @@ If you'd like to learn more about our brand story, visit our blog at https://blo
 
 ### Vision
 
-The project we are currently focused on is **[landlink](https://landlink.sh/)**. The map3d, nugget, and vessel projects are all being integrated into landlink. landlink is designed to let individuals build their own communication networks, and it operates over LoRa networks. Going further, integration with drones will enable autonomous flight on top of the landlink platform, such as setting waypoint based flight paths or surveying specific areas.
+The project we are currently focused on is **[landlink](https://landlink.sh/)**. The map3d, cartcut, and vessel projects are all being integrated into landlink. landlink is designed to let individuals build their own communication networks, and it operates over LoRa networks. Going further, integration with drones will enable autonomous flight on top of the landlink platform, such as setting waypoint based flight paths or surveying specific areas.
 
 The vision portrayed in _<Star Trek>_ is the same as our goal. "to send humanity far beyond into space", and to prove that a single person can survive there indefinitely. And we believe that independent survival for the individual is possible not only in space but here on Earth as well. Achieving this requires the self sustaining ground communication network that landlink implements.
 

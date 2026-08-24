@@ -122,10 +122,10 @@ export function Product() {
       >
         <div css={overlayStyle} />
         <div css={captionStyle}>
-          <h2 css={titleStyle}>Nugget</h2>
+          <h2 css={titleStyle}>CartCut</h2>
           <a
             css={linkStyle}
-            href="https://github.com/cartesiancs/nugget-app"
+            href="https://github.com/cartesiancs/cartcut"
             target="_blank"
             rel="noreferrer"
           >
