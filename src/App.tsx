@@ -4,6 +4,7 @@ import "./App.css";
 import { About } from "./pages/About";
 import { Product } from "./pages/Product";
 import { CartCut } from "./pages/CartCut";
+import ScrollToTop from "./components/ScrollToTop";
 import Post from "./pages/Post";
 import { Fleet } from "./pages/Fleet";
 import { Career } from "./pages/Career";
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/product" element={<Product />} />

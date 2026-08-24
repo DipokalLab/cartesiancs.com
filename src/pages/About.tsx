@@ -29,7 +29,7 @@ export function About() {
           justifyContent: "flex-start",
           alignItems: "center",
           flexDirection: "column",
-          paddingTop: "4rem",
+          paddingTop: "2rem",
           paddingBottom: "6rem",
           boxSizing: "border-box",
         })}
