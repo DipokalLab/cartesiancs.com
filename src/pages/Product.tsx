@@ -16,6 +16,12 @@ const sectionStyle = css({
   position: "relative",
   width: "100%",
   height: "100vh",
+  // On mobile, 100vh measures the viewport with the browser chrome retracted,
+  // so the bottom of the section sits behind the address bar. svh is the
+  // height with the chrome shown, which stays exact as the bar collapses.
+  "@supports (height: 100svh)": {
+    height: "100svh",
+  },
   overflow: "hidden",
   backgroundColor: "#0d0e0f",
   backgroundSize: "cover",
